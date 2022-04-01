@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop database</title>
+    <link rel="stylesheet" href="fonts/css/fontawesome.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-default bg-dark">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Shop Management System</a>
+          </div>
+        <ul class="nav navbar">
+          <li class="nav-link"><a href="Index.html">Home</a></li>
+          <li class="nav-link active"><a href="attendant.html">Attendant</a></li>
+          <li class="nav-link"><a href="admin.html">Admin</a></li>
+        </ul>
+        </div>
+      </nav>
+    <div class="container">
+      <form action="shop.php" method="post">
+        <h1 class="text-success text-center">Selling a product</h1>
+        <div class="form-group">
+          <label for="">Item Id:</label>
+          <input type="number" class="form-control" name="itemId" id="">
+        </div>
+        <div class="form-group">
+              <label for="name">Item Name:</label>
+              <input type="text" class="form-control" name="itemName" required>
+            </div>
+            <div class="form-group">
+              <label for="contact">Unit Price:</label>
+              <input type="number" class="form-control" name="unitPrice" required>
+            </div>
+            <div class="form-group">
+              <label for="">Quantity:</label>
+              <input type="number" class="form-control" name="quantity" id="" required>
+            </div>
+            <button type="submit" id="sell" class="btn btn-primary btn-block m-3">Submit</button>
+      </form>
+    </div>
+<script src="attendant.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
